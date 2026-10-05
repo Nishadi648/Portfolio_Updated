@@ -1,0 +1,11 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Task Manager Project Screenshot Placeholder</title>
+  <desc id="desc">Placeholder image for a student task manager interface.</desc>
+  <rect width="1200" height="800" fill="#EEF3FF"/>
+  <rect x="120" y="110" width="960" height="580" rx="34" fill="white" stroke="#C8D6FF" stroke-width="6"/>
+  <rect x="180" y="170" width="420" height="52" rx="16" fill="#1457D9"/>
+  <rect x="180" y="270" width="840" height="80" rx="18" fill="#E9EFFF"/>
+  <rect x="180" y="385" width="840" height="80" rx="18" fill="#E9EFFF"/>
+  <rect x="180" y="500" width="840" height="80" rx="18" fill="#E9EFFF"/>
+  <text x="600" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#0F3F9C">Student Task Manager</text>
+</svg>
