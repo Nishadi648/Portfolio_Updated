@@ -13,9 +13,19 @@ export const projects = [
       'Socket.IO'
     ],
     github: 'https://github.com/DocRoad',
-    live: 'https://github.com/DocRoad',
+  
     screenshot: '/screenshots/project-docroad.jpg'
   },
+
+  {
+  title: "Full-Stack HR Management System",
+  description: "A containerized Human Resource Management System featuring automated attendance tracking, payroll generation, and employee profiling with role-based access control.",
+  technologies: ["Go", "Vue.js", "PostgreSQL", "Docker", "Docker Compose", "Nginx", "Tailwind CSS"],
+  screenshot: "/screenshots/project-hrms.jpg",
+  github: "https://github.com/Nishadi648/HRMS-.git",
+   
+  },
+
   {
     title: 'Student Task Manager',
     description:
