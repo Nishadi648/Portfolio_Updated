@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEF4F4"/>
+      <stop offset="1" stop-color="#F7ECF1"/>
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#2A2230" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="130" cy="110" r="200" fill="#2D6A70" opacity="0.07"/>
+  <circle cx="1490" cy="800" r="220" fill="#7D2950" opacity="0.06"/>
+
+  <g filter="url(#sh)"><rect x="120" y="90" width="1360" height="720" rx="28" fill="#FFFFFF"/></g>
+
+  <!-- top bar -->
+  <circle cx="186" cy="152" r="24" fill="#2D6A70"/>
+  <circle cx="183" cy="149" r="9" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="190" y1="156" x2="198" y2="164" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <text x="224" y="161" fill="#2A2230" font-size="26" font-weight="800">FoundIt</text>
+  <g font-size="17" fill="#5A4E5E">
+    <text x="900" y="160">Browse</text><text x="1000" y="160">My reports</text><text x="1130" y="160">Claims</text>
+  </g>
+  <rect x="1250" y="128" width="190" height="48" rx="24" fill="#2D6A70"/>
+  <text x="1345" y="159" fill="#FFFFFF" font-size="17" font-weight="600" text-anchor="middle">+ Report item</text>
+
+  <!-- search -->
+  <rect x="160" y="212" width="1280" height="64" rx="32" fill="#FBF8F6" stroke="#EADFE3" stroke-width="2"/>
+  <circle cx="200" cy="243" r="10" fill="none" stroke="#857A88" stroke-width="3"/>
+  <line x1="207" y1="250" x2="215" y2="258" stroke="#857A88" stroke-width="3" stroke-linecap="round"/>
+  <text x="232" y="250" fill="#2A2230" font-size="19">black wallet</text>
+  <rect x="1310" y="222" width="118" height="44" rx="22" fill="#7D2950"/>
+  <text x="1369" y="250" fill="#FFFFFF" font-size="16" font-weight="600" text-anchor="middle">Search</text>
+
+  <!-- filter chips -->
+  <g font-size="15" font-weight="600">
+    <rect x="160" y="296" width="132" height="38" rx="19" fill="#E8F2F2"/><text x="226" y="321" fill="#2D6A70" text-anchor="middle">Category ▾</text>
+    <rect x="304" y="296" width="132" height="38" rx="19" fill="#E8F2F2"/><text x="370" y="321" fill="#2D6A70" text-anchor="middle">Location ▾</text>
+    <rect x="448" y="296" width="132" height="38" rx="19" fill="#E8F2F2"/><text x="514" y="321" fill="#2D6A70" text-anchor="middle">Date ▾</text>
+    <rect x="592" y="296" width="132" height="38" rx="19" fill="#F7ECF1"/><text x="658" y="321" fill="#7D2950" text-anchor="middle">Found only</text>
+  </g>
+  <text x="1440" y="321" fill="#857A88" font-size="16" text-anchor="end">12 results</text>
+
+  <!-- item cards -->
+  <g font-size="16">
+    <!-- card 1 -->
+    <rect x="160" y="362" width="408" height="408" rx="22" fill="#FFFFFF" stroke="#EADFE3" stroke-width="2"/>
+    <rect x="176" y="378" width="376" height="200" rx="16" fill="#F3EFEA"/>
+    <rect x="296" y="432" width="136" height="92" rx="14" fill="#3A3140"/>
+    <rect x="296" y="452" width="136" height="14" fill="#2A2230"/>
+    <circle cx="410" cy="490" r="8" fill="#C9A86A"/>
+    <text x="192" y="618" fill="#2A2230" font-size="21" font-weight="700">Black leather wallet</text>
+    <text x="192" y="648" fill="#857A88">Library · 2nd floor · 8 Nov</text>
+    <rect x="192" y="690" width="112" height="34" rx="17" fill="#E8F2F2"/><text x="248" y="713" fill="#2D6A70" font-size="14" font-weight="700" text-anchor="middle">Found</text>
+    <rect x="316" y="690" width="112" height="34" rx="17" fill="#F7ECF1"/><text x="372" y="713" fill="#7D2950" font-size="14" font-weight="700" text-anchor="middle">Matched</text>
+
+    <!-- card 2 -->
+    <rect x="596" y="362" width="408" height="408" rx="22" fill="#FFFFFF" stroke="#EADFE3" stroke-width="2"/>
+    <rect x="612" y="378" width="376" height="200" rx="16" fill="#EEF4F4"/>
+    <rect x="752" y="420" width="96" height="120" rx="14" fill="#2D6A70"/>
+    <rect x="764" y="434" width="72" height="80" rx="6" fill="#BFD9DA"/>
+    <text x="628" y="618" fill="#2A2230" font-size="21" font-weight="700">Blue phone (case)</text>
+    <text x="628" y="648" fill="#857A88">Canteen · 7 Nov</text>
+    <rect x="628" y="690" width="112" height="34" rx="17" fill="#E8F2F2"/><text x="684" y="713" fill="#2D6A70" font-size="14" font-weight="700" text-anchor="middle">Found</text>
+    <rect x="752" y="690" width="132" height="34" rx="17" fill="#FFF4E0"/><text x="818" y="713" fill="#9A6A12" font-size="14" font-weight="700" text-anchor="middle">Verifying</text>
+
+    <!-- card 3 -->
+    <rect x="1032" y="362" width="408" height="408" rx="22" fill="#FFFFFF" stroke="#EADFE3" stroke-width="2"/>
+    <rect x="1048" y="378" width="376" height="200" rx="16" fill="#F7ECF1"/>
+    <circle cx="1210" cy="478" r="44" fill="none" stroke="#7D2950" stroke-width="12"/>
+    <rect x="1246" y="470" width="80" height="16" rx="8" fill="#7D2950"/>
+    <rect x="1290" y="486" width="12" height="24" rx="4" fill="#7D2950"/>
+    <text x="1064" y="618" fill="#2A2230" font-size="21" font-weight="700">Set of keys</text>
+    <text x="1064" y="648" fill="#857A88">Main gate · 6 Nov</text>
+    <rect x="1064" y="690" width="112" height="34" rx="17" fill="#F3EFEA"/><text x="1120" y="713" fill="#5A4E5E" font-size="14" font-weight="700" text-anchor="middle">Lost</text>
+    <rect x="1188" y="690" width="124" height="34" rx="17" fill="#E7F3EA"/><text x="1250" y="713" fill="#2E7A45" font-size="14" font-weight="700" text-anchor="middle">Returned</text>
+  </g>
+</svg>

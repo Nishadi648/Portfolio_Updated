@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7ECF1"/>
+      <stop offset="1" stop-color="#EEF4F4"/>
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#5E1F3C" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1480" cy="120" r="220" fill="#7D2950" opacity="0.06"/>
+  <circle cx="110" cy="820" r="180" fill="#2D6A70" opacity="0.07"/>
+
+  <!-- app window -->
+  <g filter="url(#sh)">
+    <rect x="120" y="90" width="1360" height="720" rx="28" fill="#FFFFFF"/>
+  </g>
+  <!-- sidebar -->
+  <rect x="120" y="90" width="250" height="720" rx="28" fill="#5E1F3C"/>
+  <rect x="342" y="90" width="28" height="720" fill="#5E1F3C"/>
+  <rect x="160" y="132" width="44" height="44" rx="12" fill="#F3D9E4"/>
+  <path d="M182 142v24M170 154h24" stroke="#5E1F3C" stroke-width="5" stroke-linecap="round"/>
+  <text x="218" y="162" fill="#FFFFFF" font-size="22" font-weight="700">Digital Clinic</text>
+  <g font-size="17" fill="#F3D9E4">
+    <rect x="148" y="222" width="194" height="46" rx="12" fill="#FFFFFF" opacity="0.14"/>
+    <text x="172" y="251" fill="#FFFFFF" font-weight="600">Live Queue</text>
+    <text x="172" y="311">Appointments</text>
+    <text x="172" y="365">Patients</text>
+    <text x="172" y="419">Doctors</text>
+    <text x="172" y="473">Reports</text>
+  </g>
+
+  <!-- header -->
+  <text x="420" y="160" fill="#2A2230" font-size="32" font-weight="700">Today’s Queue</text>
+  <text x="420" y="194" fill="#857A88" font-size="17">General OPD · Dr. Perera · Room 03</text>
+  <rect x="1236" y="134" width="200" height="50" rx="25" fill="#7D2950"/>
+  <text x="1336" y="166" fill="#FFFFFF" font-size="17" font-weight="600" text-anchor="middle">+ Book slot</text>
+
+  <!-- now serving -->
+  <rect x="420" y="232" width="380" height="250" rx="22" fill="#7D2950"/>
+  <text x="452" y="276" fill="#F3D9E4" font-size="17" font-weight="600" letter-spacing="2">NOW SERVING</text>
+  <text x="452" y="384" fill="#FFFFFF" font-size="104" font-weight="800">#12</text>
+  <text x="452" y="434" fill="#F3D9E4" font-size="18">Next: #13 · est. 6 min</text>
+  <rect x="660" y="404" width="110" height="44" rx="22" fill="#FFFFFF"/>
+  <text x="715" y="432" fill="#7D2950" font-size="16" font-weight="700" text-anchor="middle">Call next</text>
+
+  <!-- stats -->
+  <g font-size="16">
+    <rect x="828" y="232" width="296" height="116" rx="20" fill="#F7ECF1"/>
+    <text x="856" y="274" fill="#857A88">Waiting</text>
+    <text x="856" y="324" fill="#2A2230" font-size="40" font-weight="800">8</text>
+    <rect x="1140" y="232" width="296" height="116" rx="20" fill="#E8F2F2"/>
+    <text x="1168" y="274" fill="#857A88">Avg. wait time</text>
+    <text x="1168" y="324" fill="#2A2230" font-size="40" font-weight="800">14 min</text>
+    <rect x="828" y="366" width="608" height="116" rx="20" fill="#FBF8F6" stroke="#EADFE3" stroke-width="2"/>
+    <text x="856" y="406" fill="#857A88">Appointments booked</text>
+    <rect x="856" y="428" width="540" height="16" rx="8" fill="#EADFE3"/>
+    <rect x="856" y="428" width="390" height="16" rx="8" fill="#2D6A70"/>
+    <text x="1396" y="406" fill="#2A2230" font-weight="700" text-anchor="end">29 / 40</text>
+  </g>
+
+  <!-- queue table -->
+  <rect x="420" y="512" width="1016" height="262" rx="22" fill="#FFFFFF" stroke="#EADFE3" stroke-width="2"/>
+  <g font-size="15" fill="#857A88" font-weight="600" letter-spacing="1">
+    <text x="452" y="552">NO.</text><text x="552" y="552">PATIENT</text><text x="852" y="552">TIME SLOT</text><text x="1052" y="552">TYPE</text><text x="1252" y="552">STATUS</text>
+  </g>
+  <line x1="440" y1="570" x2="1416" y2="570" stroke="#EADFE3" stroke-width="2"/>
+  <g font-size="17" fill="#2A2230">
+    <text x="452" y="612" font-weight="700">#12</text><text x="552" y="612">S. Fernando</text><text x="852" y="612">10:20 AM</text><text x="1052" y="612">Booked</text>
+    <rect x="1252" y="592" width="128" height="30" rx="15" fill="#F3D9E4"/><text x="1316" y="613" fill="#7D2950" font-size="14" font-weight="700" text-anchor="middle">In room</text>
+    <text x="452" y="668" font-weight="700">#13</text><text x="552" y="668">K. Jayasinghe</text><text x="852" y="668">10:30 AM</text><text x="1052" y="668">Walk-in</text>
+    <rect x="1252" y="648" width="128" height="30" rx="15" fill="#E8F2F2"/><text x="1316" y="669" fill="#2D6A70" font-size="14" font-weight="700" text-anchor="middle">Next</text>
+    <text x="452" y="724" font-weight="700">#14</text><text x="552" y="724">M. Silva</text><text x="852" y="724">10:40 AM</text><text x="1052" y="724">Booked</text>
+    <rect x="1252" y="704" width="128" height="30" rx="15" fill="#F3EFEA"/><text x="1316" y="725" fill="#857A88" font-size="14" font-weight="700" text-anchor="middle">Waiting</text>
+  </g>
+</svg>
