@@ -18,7 +18,10 @@ import {
   IconPin,
   IconTools,
   IconBriefcase,
-  IconFile
+  IconFile,
+  IconMic,
+  IconExpand,
+  IconClose
 } from '../components/Icons.jsx';
 
 function SectionHead({ eyebrow, title, intro, id, light }) {
@@ -86,6 +89,36 @@ function CvMenu() {
     </div>
   );
 }
+
+/* Full-size photo viewer for the events section (click a photo to open, Esc or click outside to close) */
+function Lightbox({ photo, onClose }) {
+  const closeRef = useRef(null);
+  useEffect(() => {
+    if (!photo) return undefined;
+    const onKey = (e) => e.key === 'Escape' && onClose();
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    closeRef.current?.focus();
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
+    };
+  }, [photo, onClose]);
+
+  if (!photo) return null;
+  return (
+    <div className="lightbox" role="dialog" aria-modal="true" aria-label={photo.alt} onClick={onClose}>
+      <button ref={closeRef} type="button" className="lightbox-close" aria-label="Close photo" onClick={onClose}>
+        <IconClose />
+      </button>
+      <figure onClick={(e) => e.stopPropagation()}>
+        <img src={photo.src} alt={photo.alt} />
+        {photo.caption && <figcaption>{photo.caption}</figcaption>}
+      </figure>
+    </div>
+  );
+}
+
 const pathSection = { ba: 'ba-projects', dev: 'dev-projects' };
 
 const baProjects = projects.filter((p) => p.path === 'ba');
@@ -123,6 +156,8 @@ function CertGroup({ title, path, items }) {
 }
 
 export default function Home() {
+  const [photo, setPhoto] = useState(null);
+
   /* contact form opens the visitor's email app with the message filled in */
   function handleSubmit(e) {
     e.preventDefault();
@@ -327,6 +362,52 @@ export default function Home() {
             })}
           </div>
         </div>
+      </section>
+
+      {/* ================= EVENTS: HOSTING & COMPERING ================= */}
+      <section id="events" className="section" aria-labelledby="events-title">
+        <div className="container">
+          <SectionHead
+            eyebrow="Beyond the Desk · Leadership & Communication"
+            title="Event Hosting & Compering"
+            intro="Hosting live events has sharpened the skills I use every day as an analyst: speaking clearly, keeping a room engaged and keeping a programme running on time."
+            id="events-title"
+          />
+          <div className="event-list">
+            {profile.events.map((ev) => {
+              const meta = [ev.organiser, ev.venue, ev.year].filter(Boolean).join(' · ');
+              return (
+                <article className={`event-card${ev.photos.length > 1 ? ' event-card--gallery' : ''}`} key={ev.id}>
+                  <div className={`event-photos event-photos--${ev.photos.length}`}>
+                    {ev.photos.map((ph) => (
+                      <button
+                        type="button"
+                        className="event-photo"
+                        key={ph.src}
+                        onClick={() => setPhoto({ ...ph, caption: `${ev.title}${meta ? ` · ${meta}` : ''}` })}
+                        aria-label={`Enlarge photo: ${ph.alt}`}
+                      >
+                        <img src={ph.src} alt={ph.alt} loading="lazy" />
+                        <span className="event-photo-zoom" aria-hidden="true">
+                          <IconExpand size={16} />
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                  <div className="event-body">
+                    <span className="event-role">
+                      <IconMic size={16} /> {ev.role}
+                    </span>
+                    <h3>{ev.title}</h3>
+                    <p className="event-meta">{meta}</p>
+                    <p className="event-desc">{ev.description}</p>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+        <Lightbox photo={photo} onClose={() => setPhoto(null)} />
       </section>
 
       {/* ================= EDUCATION & CERTS ================= */}

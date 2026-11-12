@@ -113,6 +113,20 @@ export const IconFile = (p) => (
   </Svg>
 );
 
+// NEW: microphone icon (used on the "Compere" label in the Events section)
+export const IconMic = (p) => (
+  <Svg {...p}>
+    <rect x="9" y="2" width="6" height="12" rx="3" />
+    <path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8" />
+  </Svg>
+);
+// NEW: expand icon (shown on event photos when you hover to enlarge)
+export const IconExpand = (p) => (
+  <Svg {...p}>
+    <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+  </Svg>
+);
+
 // Brand marks (filled)
 export const IconGithub = ({ size = 20 }) => (
   <svg viewBox="0 0 24 24" width={size} height={size} fill="currentColor" aria-hidden="true" focusable="false">

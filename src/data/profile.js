@@ -154,6 +154,36 @@ export const profile = {
     }
   ],
 
+  // Events I hosted / compered. Photos live in /public/events.
+  events: [
+    {
+      id: 'inco-2026',
+      title: 'INCO Exhibition 2026',
+      role: 'Compere',
+      organiser: 'IIESL',
+      venue: 'BMICH, Colombo',
+      year: '2026',
+      description:
+        'Co-compered the INCO Exhibition 2026 organised by IIESL at the BMICH, introducing speakers and guiding guests through the programme.',
+      photos: [{ src: '/events/inco-2026.jpg', alt: 'Nishadi compering at the INCO Exhibition 2026 podium at the BMICH' }]
+    },
+    {
+      id: 'itum-colours',
+      title: 'Colours Ceremony',
+      role: 'Compere',
+      organiser: 'Institute of Technology, University of Moratuwa',
+      venue: '',
+      year: '',
+      description:
+        'Compered the Colours Ceremony of the Institute of Technology, University of Moratuwa, leading the programme and introducing each segment of the ceremony.',
+      photos: [
+        { src: '/events/itum-colours-1.jpg', alt: 'Nishadi compering the ITUM Colours Ceremony' },
+        { src: '/events/itum-colours-2.jpg', alt: 'Nishadi reading the programme at the ITUM Colours Ceremony podium' },
+        { src: '/events/itum-colours-3.jpg', alt: 'Nishadi at the podium during the ITUM Colours Ceremony' }
+      ]
+    }
+  ],
+
   certifications: [
     { name: 'Introduction to CBAP', issuer: 'Simplilearn', year: '2026', path: 'ba' },
     { name: 'Get started quickly with Jira', issuer: 'Atlassian University', year: '2026', path: 'ba' },
