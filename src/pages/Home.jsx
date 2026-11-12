@@ -31,9 +31,9 @@ function SectionHead({ eyebrow, title, intro, id, light }) {
   );
 }
 
-const pathIcon = { ba: IconChart, dev: IconCode, tools: IconTools, se: IconTools };
+const pathIcon = { ba: IconChart, dev: IconCode, tools: IconTools, se: IconCode };
 
-/* "Download CV" button that opens a small menu with the three CV versions */
+/* "Download CV" button that opens a small menu with the CV versions */
 function CvMenu() {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
@@ -144,10 +144,9 @@ export default function Home() {
             </h1>
             <p className="hero-title">
               <span className="nowrap">Business Analyst</span> <span className="hero-amp">&amp;</span>{' '}
-              <span className="nowrap">Frontend Developer</span>
+              <span className="nowrap">Software Engineer</span>
             </p>
 
-            {/* EDITED: only the two path names, no technical names */}
             <ul className="hero-roles" aria-label="My two paths">
               <li className="hero-role hero-role--ba">
                 <IconChart size={18} />
@@ -155,7 +154,7 @@ export default function Home() {
               </li>
               <li className="hero-role hero-role--dev">
                 <IconCode size={18} />
-                <strong>Development</strong>
+                <strong>Software Engineering</strong>
               </li>
             </ul>
 
@@ -166,7 +165,7 @@ export default function Home() {
                 <IconChart size={18} /> BA Projects
               </a>
               <a className="btn btn-outline-light" href="#dev-projects">
-                <IconCode size={18} /> Dev Projects
+                <IconCode size={18} /> SE Projects
               </a>
               <CvMenu />
             </div>
@@ -183,7 +182,7 @@ export default function Home() {
               <IconChart size={18} /> Business Analyst
             </div>
             <div className="hero-badge hero-badge--dev">
-              <IconCode size={18} /> Frontend Developer
+              <IconCode size={18} /> Software Engineer
             </div>
           </div>
         </div>
@@ -222,8 +221,8 @@ export default function Home() {
         <div className="container">
           <SectionHead
             eyebrow="My Two Paths"
-            title="Business Analysis + Development"
-            intro="I work on both sides of a project: understanding and defining the problem as a Business Analyst, and building the solution as a Frontend Developer."
+            title="Business Analysis + Software Engineering"
+            intro="I work on both sides of a project: understanding and defining the problem as a Business Analyst, and building the solution end to end as a Software Engineer."
             id="paths-title"
           />
           <div className="path-grid">
@@ -277,7 +276,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ================= DEV PROJECTS ================= */}
+      {/* ================= SOFTWARE ENGINEERING PROJECTS ================= */}
       <section id="dev-projects" className="section project-section section--teal path-dev" aria-labelledby="dev-title">
         <div className="container">
           <div className="project-section-head">
@@ -285,9 +284,9 @@ export default function Home() {
               <IconCode size={28} />
             </span>
             <SectionHead
-              eyebrow="Path 02 · Development"
-              title="Development Projects"
-              intro="Frontend and full-stack applications built with React, Vue.js, Go and Node.js, from group projects to personal builds."
+              eyebrow="Path 02 · Software Engineering"
+              title="Software Engineering Projects"
+              intro="Full-stack applications built end to end: React and Vue.js front ends, REST APIs in Node.js and Go, PostgreSQL and MongoDB data layers, and Docker."
               id="dev-title"
             />
           </div>
@@ -304,7 +303,7 @@ export default function Home() {
         <div className="container">
           <SectionHead
             eyebrow="Skills"
-            title="Business Analysis & Development skills"
+            title="Business Analysis & Software Engineering skills"
             id="skills-title"
           />
           <div className="skill-grid">
@@ -374,7 +373,7 @@ export default function Home() {
           <div>
             <SectionHead eyebrow="Certifications" title="Courses & certificates" id="cert-title" />
             <CertGroup title="Business Analysis" path="ba" items={baCerts} />
-            <CertGroup title="Development & Cloud" path="dev" items={devCerts} />
+            <CertGroup title="Software Engineering & Cloud" path="dev" items={devCerts} />
           </div>
         </div>
       </section>
@@ -385,7 +384,7 @@ export default function Home() {
           <SectionHead
             eyebrow="Download CV"
             title="Pick the CV for your role"
-            intro="I keep a tailored CV for each path. All three are one-page PDFs."
+            intro="I keep a tailored CV for each path. Both are one-page PDFs."
             id="cv-title"
           />
           <div className="cv-grid">
@@ -420,7 +419,7 @@ export default function Home() {
             <p className="eyebrow eyebrow--light">Contact</p>
             <h2 id="contact-title">Let’s work together</h2>
             <p className="contact-intro">
-              I’m open to <strong>Business Analyst</strong> internships and <strong>Frontend Developer</strong> roles.
+              I’m open to <strong>Business Analyst</strong> and <strong>Software Engineering</strong> internships.
               Send a message and I’ll get back to you.
             </p>
             <ul className="contact-list">

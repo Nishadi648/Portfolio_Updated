@@ -1,9 +1,9 @@
 // All projects in one list.
 //   path: 'ba'  -> shows under "Business Analysis"
-//   path: 'dev' -> shows under "Development"
+//   path: 'dev' -> shows under "Software Engineering"
 // Projects with a `caseStudy` get their own page at /projects/<slug>.
 //
-// `relatedCase` on a development project adds a link to its BA case study.
+// `relatedCase` on a software engineering project adds a link to its BA case study.
 //
 // NOTE: case-study tables (stakeholders, requirement IDs, user stories) were drafted
 // from your CVs and GitHub descriptions. Check them against your real SRS / Jira
@@ -264,7 +264,7 @@ export const projects = [
         'User stories in a Jira backlog'
       ],
       outcome:
-        'A clear, verified workflow and requirements set that turns a scattered, informal process into a trackable one. I then built the React front end from it (see FoundIt under Development).'
+        'A clear, verified workflow and requirements set that turns a scattered, informal process into a trackable one. I then built the React front end from it (see FoundIt under Software Engineering).'
     }
   },
 
@@ -274,15 +274,15 @@ export const projects = [
     title: 'DocRoad',
     subtitle: 'Smart Vehicle Repair & Roadside Assistance',
     context: 'Final Year Group Project',
-    role: 'Frontend Developer',
+    role: 'Full-Stack Developer',
     image: '/screenshots/project-docroad.jpg',
     summary:
       'A cross-platform roadside assistance platform that connects vehicle owners with nearby mechanics during emergencies.',
     features: [
-      'Built the Admin-only React (Vite) dashboard',
-      'Live map of drivers, mechanics & service requests, plus reports',
-      'REST API integration with Firebase token auth & role-based access',
-      'Worked in a Dockerized stack (PostgreSQL, MongoDB)'
+      'Secure Node.js / Express REST API with Firebase token auth',
+      'Role-based access for Admin, Driver and Mechanic',
+      'Admin-only React dashboard with live map & reports',
+      'PostgreSQL + MongoDB data layer, run with Docker Compose'
     ],
     tags: ['React.js', 'Vite', 'Flutter', 'Node.js', 'Express.js', 'Firebase Auth', 'PostgreSQL', 'MongoDB', 'Docker'],
     github: 'https://github.com/DocRoad',
@@ -315,16 +315,16 @@ export const projects = [
     path: 'dev',
     title: 'HR Management System',
     subtitle: 'Human Resource Management Platform',
-    context: 'Full-Stack Project',
+    context: 'Personal Project',
     role: 'Full-Stack Developer',
     image: '/screenshots/project-hrms.jpg',
     summary:
       'A containerised full-stack HR platform built to manage employee attendance, leave workflows and organisation structure.',
     features: [
-      'Dynamic dashboard & analytics',
-      'Employee leave request approval workflow',
-      'REST API integration with Go backend',
-      'Dockerized environment setup'
+      'REST APIs in Go (Gin) for attendance & leave',
+      'Leave request approval workflow',
+      'Responsive Vue.js dashboard connected to the APIs',
+      'PostgreSQL database in a Dockerized setup'
     ],
     tags: ['Vue.js', 'Go (Golang)', 'Gin Framework', 'PostgreSQL', 'Docker'],
     github: 'https://github.com/Nishadi648/HRMS-'
@@ -364,5 +364,5 @@ export const projects = [
 
 export const pathLabels = {
   ba: 'Business Analysis',
-  dev: 'Development'
+  dev: 'Software Engineering'
 };

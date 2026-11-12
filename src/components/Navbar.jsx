@@ -7,7 +7,7 @@ export const sections = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
   { id: 'ba-projects', label: 'Business Analysis' },
-  { id: 'dev-projects', label: 'Development' },
+  { id: 'dev-projects', label: 'Software Engineering' },
   { id: 'skills', label: 'Skills' },
   { id: 'education', label: 'Education' },
   { id: 'cv', label: 'CV' },

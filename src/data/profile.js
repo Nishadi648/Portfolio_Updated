@@ -5,7 +5,7 @@ export const profile = {
   firstName: 'Nishadi',
   headline: 'IT Undergraduate · University of Moratuwa',
   tagline:
-    'I bridge the gap between business needs and technical solutions: from the first stakeholder conversation and user story to a clean, working interface.',
+    'I bridge the gap between business needs and technical solutions: from the first stakeholder conversation and user story to clean, working software.',
   photo: '/profile.jpg',
 
   // CV downloads (PDFs live in /public/cv). Shown in the hero menu and the CV section.
@@ -15,12 +15,6 @@ export const profile = {
       label: 'Business Analyst CV',
       note: 'Requirements, user stories, Jira & process analysis',
       file: '/cv/Nishadi_Rajasekara_CV_Business_Analyst.pdf'
-    },
-    {
-      id: 'dev',
-      label: 'Frontend Developer CV',
-      note: 'React, Vue.js, dashboards & API integration',
-      file: '/cv/Nishadi_Rajasekara_CV_Frontend_Developer.pdf'
     },
     {
       id: 'se',
@@ -35,18 +29,18 @@ export const profile = {
   location: 'Gampaha, Sri Lanka',
   github: 'https://github.com/Nishadi648',
   linkedin: 'https://www.linkedin.com/in/nishadi-rajasekara/',
-  openTo: 'Business Analyst internships & Frontend Developer roles',
+  openTo: 'Business Analyst & Software Engineering internships',
 
   about: [
     'I’m an IT undergraduate at the Institute of Technology, University of Moratuwa. I enjoy understanding how work really happens, finding where it breaks, and shaping requirements that both stakeholders and developers can rely on.',
-    'Because I also build software, I can follow an idea all the way through: elicit and document the requirement, model the process, write the user stories, and then build the screen that delivers it.'
+    'Because I also build software end to end, I can follow an idea all the way through: elicit and document the requirement, model the process, write the user stories, and then design and build the API, database and interface that deliver it.'
   ],
 
   quickFacts: [
     { label: 'Studying', value: 'NDT in Information Technology' },
     { label: 'Current GPA', value: '3.67' },
     { label: 'Path 01', value: 'Business Analysis' },
-    { label: 'Path 02', value: 'Frontend Development' }
+    { label: 'Path 02', value: 'Software Engineering' }
   ],
 
   // The two career paths shown on the home page.
@@ -66,16 +60,16 @@ export const profile = {
     },
     {
       id: 'dev',
-      title: 'Frontend Developer',
+      title: 'Software Engineer',
       intro:
-        'Building clean, responsive and user-friendly interfaces, and connecting them to real back-end services.',
+        'Building full-stack applications end to end: front ends, REST APIs, databases and the setup that runs them.',
       points: [
-        'React.js & Vue.js interfaces',
-        'REST API integration (tested in Postman)',
-        'Full-stack apps with Go & Node.js',
-        'Docker-based development setups'
+        'Full-stack web apps with React & Vue.js',
+        'REST APIs with Node.js / Express & Go',
+        'Data layers on PostgreSQL, MongoDB & MySQL',
+        'Docker, Git / GitHub & Agile delivery'
       ],
-      cta: 'View development projects'
+      cta: 'View software engineering projects'
     }
   ],
 
@@ -96,22 +90,31 @@ export const profile = {
     },
     {
       path: 'dev',
-      title: 'Frontend & Development',
+      title: 'Software Engineering',
       skills: [
+        'JavaScript',
+        'TypeScript',
+        'Python',
+        'Java',
+        'Go (Golang)',
+        'SQL',
         'React.js',
         'Vue.js',
-        'JavaScript',
         'HTML5 / CSS3',
-        'Go (Golang)',
+        'Node.js',
+        'Express.js',
+        'Spring Boot',
         'REST APIs',
+        'Firebase Auth',
         'PostgreSQL',
-        'MongoDB'
+        'MongoDB',
+        'MySQL'
       ]
     },
     {
       path: 'tools',
       title: 'Tools',
-      skills: ['Jira', 'Postman', 'Git & GitHub', 'Docker', 'Figma']
+      skills: ['Jira', 'Postman', 'Git & GitHub', 'Docker', 'GitHub Actions', 'Figma']
     }
   ],
 

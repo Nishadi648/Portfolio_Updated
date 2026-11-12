@@ -32,7 +32,7 @@ export default function Footer() {
           <span className="brand-dot">.</span>
         </p>
         <p className="footer-text">
-          Business Analyst &amp; Frontend Developer · © {new Date().getFullYear()} {profile.name}
+          Business Analyst &amp; Software Engineer · © {new Date().getFullYear()} {profile.name}
         </p>
         <SocialLinks className="social-links--footer" />
       </div>
